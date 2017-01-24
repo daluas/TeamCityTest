@@ -12,8 +12,6 @@ import org.junit.runners.Suite.SuiteClasses;
 import cegeka.org.Business;
 import cegeka.org.IBusiness;
 
-@RunWith(Suite.class)
-@SuiteClasses({})
 public class BusinessTest {
 	IBusiness _testInterface;
 	 @Test(expected = IOException.class)
