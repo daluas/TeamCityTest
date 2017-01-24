@@ -14,7 +14,7 @@ public class StartApp {
 		try{
 			_business.DoSomething();
 		}
-		catch(IOException e){
+		catch(Exception e){
 			// whatever
 		}
 	}

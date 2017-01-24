@@ -14,14 +14,20 @@ import cegeka.org.IBusiness;
 
 public class BusinessTest {
 	IBusiness _testInterface;
-	 @Test(expected = IOException.class)
+	 @Test(expected = ArithmeticException.class)
 	public void TestDoSomething(){
 		_testInterface = new Business();
 		try {
 			_testInterface.DoSomething();
 			fail();
-		} catch (IOException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
+			if (e instanceof ArithmeticException){
+				
+			}
+			else			{
+				fail();
+			}
 			e.printStackTrace();
 		}
 		
