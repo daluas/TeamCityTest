@@ -6,6 +6,7 @@ public class Business implements IBusiness{
 
 	public void DoSomething() {
 		// TODO Auto-generated method stub
+		int x  = 1/0;
 	}
 
 }
